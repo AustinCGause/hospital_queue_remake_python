@@ -1,4 +1,5 @@
 from random import randint
+import patient_helper as PatientHelper
 
 class Patient:
 
@@ -9,7 +10,7 @@ class Patient:
         self.patient_name = name
         self.patient_age = age
         self.patient_has_insurance = has_insurance
-        self.id_number = Patient._generate_id_number()
+        self.id_number = PatientHelper.generate_id_number()
         
         Patient.patient_directory[self.id_number] = [self.patient_name, self.patient_age, 'Patient has insurance' if self.patient_has_insurance == True else 'Patient doesn\'t have insurance']
 

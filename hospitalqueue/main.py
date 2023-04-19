@@ -1,6 +1,6 @@
-from patient import *
 import tkinter as tk
 import ttkbootstrap as ttk
+import patient as Patient
 
 # window
 window = ttk.Window(themename = 'darkly', title = 'Hospital Queueing System', minsize = (600,500), scaling = False)
